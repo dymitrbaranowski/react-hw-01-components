@@ -1,5 +1,5 @@
 import { Profile } from "./Profile";
-imprt userItems from '../user.json'
+import userItems from '../user.json';
 
 export const App = () => {
   return (
