@@ -20,11 +20,10 @@ export const Description = styled.div`
 `;
 
 export const Avatar = styled.img`
-    display: 'flex',
-    max-Width: 30%;
-    border-radius: 50%;
-    border: 0.5px solid   rgb(0, 0, 0);
-
+  display: 'flex';
+  max-width: 30%;
+  border-radius: 50%;
+  border: 0.5px solid rgb(0, 0, 0);
 `;
 
 export const ProfileName = styled.p`

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { List } from './FriendList.styled';
-import { FriendListItem } from './FriendListItem';
- 
+import { FriendListItem } from '../FriendListItem/FriendListItem';
+
 export const FriendList = ({ friends }) => (
   <List>
     {friends.map(({ avatar, name, isOnline, id }) => (
@@ -25,5 +25,3 @@ FriendList.propTypes = {
     })
   ).isRequired,
 };
-
-export default FriendList;
