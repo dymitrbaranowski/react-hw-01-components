@@ -1,5 +1,12 @@
 import PropTypes from 'prop-types';
-import { Container, StatList, StatListItem, Title } from './Statistic.styled';
+import {
+  Container,
+  Label,
+  Percentage,
+  StatList,
+  StatListItem,
+  Title,
+} from './Statistic.styled';
 
 function getRandomHexColor() {
   let bgColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -9,7 +16,7 @@ function getRandomHexColor() {
 export const Statistics = ({ title, stats }) => (
   <Container>
     <section>
-            {title && <Title>{title}</Title>}
+      {title && <Title>{title}</Title>}
 
       <StatList>
         {stats.map(stat => (
@@ -19,8 +26,8 @@ export const Statistics = ({ title, stats }) => (
             }}
             key={stat.id}
           >
-            <span>{stat.label}</span>
-            <span>{stat.percentage}%</span>
+            <Label>{stat.label}</Label>
+            <Percentage>{stat.percentage}%</Percentage>
           </StatListItem>
         ))}
       </StatList>

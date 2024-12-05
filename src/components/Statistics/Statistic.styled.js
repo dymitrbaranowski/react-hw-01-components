@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 50%;
+  /* max-width: 50%; */
   margin-top: 5vh;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5rem;
 `;
@@ -24,22 +24,41 @@ export const StatList = styled.ul`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+
   margin: 0;
   padding: 0;
   list-style: none;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+
+  :hover {
+    background-color: orange;
+  }
 `;
 
 export const StatListItem = styled.li`
-    display: flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
   text-shadow: 0 0 3px #000;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+
+  :hover {
+    background-color: orange;
+  }
 `;
 
 export const Label = styled.span`
   padding-top: 1.3rem;
   font-size: 1rem;
   color: #fff;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+
+  :hover {
+    background-color: orange;
+  }
 `;
 
 export const Percentage = styled.span`
@@ -47,4 +66,10 @@ export const Percentage = styled.span`
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+
+  :hover {
+    background-color: orange;
+  }
 `;

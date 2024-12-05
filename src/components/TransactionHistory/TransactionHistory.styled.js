@@ -1,5 +1,5 @@
 import styled from 'styled-components';
- 
+
 export const TransactionHistoryTable = styled.table`
   margin: 5vh auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -17,6 +17,8 @@ export const ValuesRow = styled.tr`
   font-size: 2rem;
   text-align: center;
   text-transform: capitalize;
+  transition-property: background-color, color;
+  transition-duration: 300ms;
 
   :last-child .transactionData:first-child {
     border-radius: 0 0 0 0.5rem;
@@ -26,9 +28,10 @@ export const ValuesRow = styled.tr`
     border-radius: 0 0 0.5rem 0;
   }
 
-  /* :nth-child(even) {
-    background-color: #f2f2f2;
-  } */
+  :hover {
+    color: #02bbd7;
+    background-color: #fff;
+  }
 `;
 
 export const ColumnHeader = styled.th`
@@ -39,12 +42,20 @@ export const ColumnHeader = styled.th`
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
+  transition-property: color;
+  transition-property: background-color, color;
+  transition-duration: 300ms;
 
-  :first-child {
+  :hover {
+    color: #02bbd7;
+    background-color: #fff;
+  }
+
+  /* :first-child {
     border-radius: 0.5rem 0 0 0;
   }
 
   :last-child {
     border-radius: 0 0.5rem 0 0;
-  }
+  } */
 `;

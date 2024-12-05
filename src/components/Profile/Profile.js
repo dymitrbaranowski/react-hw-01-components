@@ -9,6 +9,8 @@ import {
   LikeList,
   FollowersList,
   ViewsList,
+  Label,
+  Quantity,
 } from './Profile.styled';
 
 export const Profile = ({
@@ -25,16 +27,16 @@ export const Profile = ({
 
       <Stats>
         <FollowersList>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
+          <Label>Followers</Label>
+          <Quantity>{stats.followers}</Quantity>
         </FollowersList>
         <ViewsList>
-          <span>Views</span>
-          <span>{stats.views}</span>
+          <Label>Views</Label>
+          <Quantity>{stats.views}</Quantity>
         </ViewsList>
         <LikeList>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
+          <Label>Likes</Label>
+          <Quantity>{stats.likes}</Quantity>
         </LikeList>
       </Stats>
     </Container>

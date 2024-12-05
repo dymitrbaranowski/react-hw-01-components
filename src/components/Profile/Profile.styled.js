@@ -45,6 +45,12 @@ export const Stats = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
+  transition-property: background-color;
+  transition-duration: 500ms;
+
+  :hover {
+    background-color: orange;
+  }
 `;
 
 export const ViewsList = styled.li`
@@ -57,6 +63,12 @@ export const ViewsList = styled.li`
   background-color: rgba(241, 241, 241, 0.833);
   border-left: 1px solid #d3d5e3;
   border-right: 1px solid #d3d5e3;
+  transition-property: background-color;
+  transition-duration: 500ms;
+
+  /* :hover {
+    background-color: orange;
+  } */
 `;
 
 export const FollowersList = styled.li`
@@ -68,6 +80,12 @@ export const FollowersList = styled.li`
   border-top: 1px solid #d3d5e3;
   background-color: rgba(241, 241, 241, 0.833);
   border-radius: 0 0 0 0.5rem;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+
+  /* :hover {
+    background-color: orange;
+  } */
 `;
 
 export const LikeList = styled.li`
@@ -79,6 +97,12 @@ export const LikeList = styled.li`
   border-top: 1px solid #d3d5e3;
   background-color: rgba(241, 241, 241, 0.833);
   border-radius: 0 0 0 0.5rem;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+
+  /* :hover {
+    background-color: orange;
+  } */
 `;
 
 export const Label = styled.span`
