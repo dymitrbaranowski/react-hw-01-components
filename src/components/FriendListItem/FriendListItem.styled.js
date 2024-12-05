@@ -5,17 +5,28 @@ export const Item = styled.li`
   display: grid;
   grid-template-columns: 1fr 2fr 3fr;
   margin-top: 5vh;
-  /* background-color: ; */
+
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5rem;
 
-  transition-property: background-color, color;
+  /* transition-property: background-color, color;
   transition-duration: 300ms;
 
   :hover {
     background-color: orange;
-  }
+  } */
+
+  /* transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  :hover {
+    background-color: orange;
+    color: #fff;
+  } */
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 `;
 
 export const Avatar = styled.img`
